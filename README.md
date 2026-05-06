@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
   <h1>📡 TeleSight AI</h1>
   <p><strong>Plateforme Intelligente de Supervision de Réseau Télécom 3G/4G/5G en Temps Réel</strong></p>
@@ -118,3 +119,6 @@ Le système utilise un système de vote (Ensemble) pondéré pour déterminer l'
 <div align="center">
   <p>Construit avec ❤️ par l'équipe TeleSight AI.</p>
 </div>
+=======
+# telesight-ai
+>>>>>>> 2057c6643a424bf269e724e6ab0e253e2fee007e
