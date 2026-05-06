@@ -1,0 +1,3 @@
+@echo off
+echo Lancement de TeleSight AI via PowerShell...
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0start.ps1" %*
