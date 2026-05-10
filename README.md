@@ -45,41 +45,41 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        TeleSight AI                              │
+│                        TeleSight AI                             │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  CSV Datasets (Kaggle)                                           │
-│       │                                                           │
-│       ▼                                                           │
+│                                                                 │
+│  CSV Datasets (Kaggle)                                          │
+│       │                                                         │
+│       ▼                                                         │
 │  ┌─────────────┐    ┌───────────┐    ┌──────────────────────┐   │
 │  │Kafka Producer│───►│  Kafka   │───►│  Kafka Consumer      │   │
 │  │ (10 msg/sec) │    │  Broker  │    │  + Feature Eng.      │   │
 │  └─────────────┘    └───────────┘    └──────┬───────────────┘   │
-│                                             │                    │
+│                                             │                   │
 │                              ┌──────────────┼──────────────┐    │
 │                              ▼              ▼              ▼    │
-│                         ┌─────────┐  ┌──────────┐  ┌───────┐   │
-│                         │PostgreSQL│  │  Redis   │  │ Logs  │   │
-│                         │(history) │  │ (cache)  │  │       │   │
-│                         └────┬────┘  └────┬─────┘  └───────┘   │
-│                              │             │                     │
-│                    ┌─────────▼─────────────▼──────────┐        │
-│                    │      FastAPI — Pipeline API        │        │
-│                    │           Port 8000                │        │
-│                    │  /api/kpi/* | /api/stream/live     │        │
-│                    └─────────────┬────────────────────-┘        │
-│                                  │                               │
+│                         ┌─────────┐  ┌──────────┐  ┌───────┐    │
+│                         │PostgreSQL│ │  Redis   │  │ Logs  │    │
+│                         │(history) │ │ (cache)  │  │       │    │
+│                         └────┬────┘  └────┬─────┘  └───────┘    │
+│                              │             │                    │
+│                    ┌─────────▼─────────────▼──────────┐         │
+│                    │      FastAPI — Pipeline API      │         │
+│                    │           Port 8000              │         │
+│                    │  /api/kpi/* | /api/stream/live   │         │
+│                    └─────────────┬───────────────────-┘         │
+│                                  │                              │
 │              ┌───────────────────┼───────────────────┐          │
 │              ▼                   ▼                   ▼          │
-│   ┌──────────────────┐  ┌───────────────┐  ┌──────────────┐    │
-│   │  ML API :8001    │  │  RAG API :8002│  │  Dashboard   │    │
-│   │                  │  │               │  │   :3000      │    │
-│   │ • Isolation Forest│  │ • LangChain  │  │              │    │
-│   │ • XGBoost        │  │ • ChromaDB   │  │ • Live Charts│    │
-│   │ • LSTM+Attention │  │ • Mistral AI │  │ • Cell Map   │    │
-│   │                  │  │ • Ollama     │  │ • AI Chat    │    │
-│   └──────────────────┘  └───────────────┘  └──────────────┘    │
-│                                                                   │
+│   ┌──────────────────┐  ┌───────────────┐  ┌──────────────┐     │
+│   │  ML API :8001    │  │  RAG API :8002│  │  Dashboard   │     │
+│   │                  │  │               │  │   :3000      │     │
+│   │ • Isolation Forest│ │ • LangChain   │  │              │     │
+│   │ • XGBoost        │  │ • ChromaDB    │  │ • Live Charts│     │
+│   │ • LSTM+Attention │  │ • Mistral AI  │  │ • Cell Map   │     │
+│   │                  │  │ • Ollama      │  │ • AI Chat    │     │ 
+│   └──────────────────┘  └───────────────┘  └──────────────┘     │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -334,6 +334,5 @@ This project is built for academic purposes as part of the **5G/Industry 5.0** c
 
 **TeleSight AI** — *See your network. Predict the future. Act before it breaks.*
 
-Made with ❤️ by the TeleSight Team
 
 </div>
